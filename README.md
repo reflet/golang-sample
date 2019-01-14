@@ -144,6 +144,36 @@ $ open http://localhost:4000/goodbye  -> 200 ok
 $ open http://localhost:4000/hoge     -> 404 page not found
 ```
 
+## 型の宣言
+
+```
+$ go run type/main.go
+```
+
+## 構造体
+
+```
+$ go run struct/main.go
+```
+
+## ポインタ
+
+```
+$ go run pointer/main.go
+```
+
+## new組み込み関数
+
+```
+$ go run new/main.go
+```
+
+## nil
+
+```
+$ go run nil/main.go
+```
+
 ## Webサーバ (Helloページ / 入力フォーム)
 
 ```
@@ -159,4 +189,13 @@ $ open http://localhost:4000/form  <- 入力フォーム
 $ cd calculator
 $ go run main.go
 $ open http://localhost:4000/
+```
+
+## Webサーバ (jsonデータの利用)
+
+```
+$ cd json
+$ go run main.go
+$ open http://localhost:4000/html
+$ open http://localhost:4000/json
 ```
