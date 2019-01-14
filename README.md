@@ -135,6 +135,15 @@ $ go run switch/main.go
 $ go run goto/main.go
 ```
 
+## 関数
+
+```
+$ go run function/main.go
+$ open http://localhost:4000/hello    -> 200 ok
+$ open http://localhost:4000/goodbye  -> 200 ok
+$ open http://localhost:4000/hoge     -> 404 page not found
+```
+
 ## Webサーバ (Helloページ / 入力フォーム)
 
 ```
