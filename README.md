@@ -74,3 +74,12 @@ drwxr-xr-x   5 onoshoji  staff    160 Jan 14 09:08 template
 $ go run github.com/golang/example/hello/hello.go 
 Hello, Go examples!
 ```
+
+## Webサーバ
+
+```
+$ cd server
+$ go run main.go
+$ open http://localhost:4000/      <- Helloページ
+$ open http://localhost:4000/form  <- 入力フォーム
+```
