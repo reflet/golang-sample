@@ -1,11 +1,11 @@
-package workgoto
+package main
 
 import "fmt"
 
 /**
  * ラベルへのジャンプ(goto文)
  */
-func Goto() {
+func main() {
     // goto文でラベルにジャンプする
     goto label
 

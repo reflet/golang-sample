@@ -1,9 +1,18 @@
-package workvar
+package main
 
 import (
     "fmt"
     "strconv"
 )
+
+func main() {
+    Variable()
+    Variable1()
+    Variable2()
+    Variable3()
+    Global()
+    LocalVariable()
+}
 
 /**
  * 変数の宣言

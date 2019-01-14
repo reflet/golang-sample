@@ -1,9 +1,16 @@
-package workfor
+package main
 
 import "fmt"
 
+func main() {
+    For()
+    ContinueBreak()
+    Label()
+    Range()
+}
+
 /**
- * 条件分岐(for文)
+ * for文
  *
  * [for文の構造]
  *
@@ -53,7 +60,7 @@ func For() {
 }
 
 /**
- * 条件分岐(for文 - continue文 / break文)
+ * for文 (continue文 / break文)
  */
 func ContinueBreak() {
     // continue文の例
@@ -78,7 +85,7 @@ func ContinueBreak() {
 }
 
 /**
- * 条件分岐(ラベル付きのfor文)
+ * for文 (ラベル付き)
  * for文のネストをしている場合、continue文やbreak文の対象をラベルを使うことで柔軟に指定できる
  *
  * [構造]
@@ -115,7 +122,7 @@ func Label() {
 }
 
 /**
- * 条件分岐(rangeを用いたfor文)
+ * rangeを用いたfor文
  *
  * [構造]
  *

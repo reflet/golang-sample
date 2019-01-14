@@ -1,4 +1,4 @@
-package workfloat
+package main
 
 import (
 	"fmt"
@@ -6,9 +6,9 @@ import (
 )
 
 /**
- * init関数
+ * 浮動小数点
  */
-func Float() {
+func main() {
 	var f1 float32 = 0.3
 	var b1 uint32 = math.Float32bits(f1)
 	fmt.Printf("%.24f\n", f1)   // 0.300000011920928955078125

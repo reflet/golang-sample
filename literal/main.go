@@ -1,6 +1,11 @@
-package worklit
+package main
 
 import "fmt"
+
+func main() {
+    Literal()
+    LiteralStr()
+}
 
 /**
  * リテラル (整数)

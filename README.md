@@ -21,7 +21,7 @@ $ go run wget.go
 ~/go
 ```
 
-## 相対パス
+## インポート / 相対パス
 
 ```
 $ go run relative/main.go 
@@ -73,6 +73,66 @@ drwxr-xr-x   5 onoshoji  staff    160 Jan 14 09:08 template
 
 $ go run github.com/golang/example/hello/hello.go 
 Hello, Go examples!
+```
+
+## リテラル
+
+```
+$ go run literal/main.go
+```
+
+## 浮動小数点
+
+```
+$ go run float/main.go
+```
+
+## 演算子
+
+```
+$ go run operator/main.go
+```
+
+## キャスト
+
+```
+$ go run cast/main.go
+```
+
+## 定数
+
+```
+$ go run constant/main.go
+```
+
+## 変数
+
+```
+$ go run variable/main.go
+```
+
+## 条件分岐 (if文)
+
+```
+$ go run if/main.go
+```
+
+## 繰り返し処理 (for文)
+
+```
+$ go run for/main.go
+```
+
+## 条件分岐 (switch文)
+
+```
+$ go run switch/main.go
+```
+
+## ラベルへのジャンプ(goto文)
+
+```
+$ go run goto/main.go
 ```
 
 ## Webサーバ (Helloページ / 入力フォーム)

@@ -1,6 +1,15 @@
-package workopt
+package main
 
 import "fmt"
+
+func main() {
+    Operator()
+    ComparisonOperator()
+    LogicalOperator()
+    IncrementDecrement()
+    ComplexCalc()
+    StrOperation()
+}
 
 /**
  * 演算子

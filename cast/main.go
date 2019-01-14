@@ -1,11 +1,11 @@
-package workcast
+package main
 
 import "fmt"
 
 /**
  * 型変換（キャスト）
  */
-func Cast() {
+func main() {
     var (
         u8 uint8
         u16 uint16

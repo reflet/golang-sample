@@ -1,4 +1,4 @@
-package workif
+package main
 
 import "fmt"
 
@@ -15,7 +15,7 @@ import "fmt"
  *     ...
  *  }
  */
-func If() {
+func main() {
 	// 初期化文で利用できるもの
 	// 「:=」による変数宣言        if v := 1; 条件式 { ... }
     // 代入文                    if v = 1; 条件式 { ... }

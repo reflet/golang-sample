@@ -1,14 +1,20 @@
-package workconst
+package main
 
 import (
     "fmt"
     "unsafe"
 )
 
+func main() {
+    Constant()
+    Iota()
+    Expression()
+}
+
 /**
  * 定数の宣言
  */
-func Constunt() {
+func Constant() {
     const (
         c1 uint = 1  // uint型を持つ（型の記述があるため）
         c2 = c1      // uint型を持つ（c1がuint型を持つため）
@@ -43,7 +49,7 @@ func Constunt() {
  * ※ enumのように連続した値の定数を作成したい場合に利用する
  * ※ iotaで作成された定数は、整数リテラルや文字列リテラルのように型を持たない
  */
-func IotaConstunt() {
+func Iota() {
     const (
         a0 = iota           // 0
         a1 = iota           // 1
@@ -77,11 +83,10 @@ func IotaConstunt() {
     fmt.Println(d0, d1)
 }
 
-
 /**
  * 定数式
  */
-func ConstantExpression() {
+func Expression() {
     const (
         intLit       = 123                     // 数値リテラル
         strLit       = "ABC"                   // 文字列リテラル

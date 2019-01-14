@@ -1,6 +1,12 @@
-package workswitch
+package main
 
 import "fmt"
+
+func main() {
+    Switch()
+    Fallthrough()
+    Break()
+}
 
 /**
  * 条件分岐(switch文)
