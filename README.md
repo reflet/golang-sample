@@ -75,11 +75,19 @@ $ go run github.com/golang/example/hello/hello.go
 Hello, Go examples!
 ```
 
-## Webサーバ
+## Webサーバ (Helloページ / 入力フォーム)
 
 ```
 $ cd server
 $ go run main.go
 $ open http://localhost:4000/      <- Helloページ
 $ open http://localhost:4000/form  <- 入力フォーム
+```
+
+## Webサーバ (電卓アプリ)
+
+```
+$ cd calculator
+$ go run main.go
+$ open http://localhost:4000/
 ```
