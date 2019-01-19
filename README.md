@@ -184,25 +184,29 @@ $ go run nil/main.go
 ## Webサーバ (Helloページ / 入力フォーム)
 
 ```bash
-$ cd server
-$ go run main.go
-$ open http://localhost:4000/      <- Helloページ
-$ open http://localhost:4000/form  <- 入力フォーム
+$ go run app-server/main.go
+$ open http://192.168.99.100:8080/      <- HelloWorldページ
+$ open http://192.168.99.100:8080/form  <- 入力フォーム
 ```
 
 ## Webサーバ (電卓アプリ)
 
 ```bash
-$ cd calculator
-$ go run main.go
-$ open http://localhost:4000/
+$ go run app-calculator/main.go
+$ open http://192.168.99.100:8080/
 ```
 
 ## Webサーバ (jsonデータの利用)
 
 ```bash
-$ cd json
-$ go run main.go
-$ open http://localhost:4000/html
-$ open http://localhost:4000/json
+$ go run app-json/main.go
+$ open http://192.168.99.100:8080/html
+$ open http://192.168.99.100:8080/json
+```
+
+## Webサーバ (ルーティング)
+```bash
+$ go run app-routing/main.go
+$ open http://192.168.99.100:8080/hello
+$ open http://192.168.99.100:8080/goodbye
 ```

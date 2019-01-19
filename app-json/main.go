@@ -20,7 +20,7 @@ func main() {
     http.HandleFunc("/html", htmlHandler)
 
     // Web差０話起動
-    if err := http.ListenAndServe(":4000", nil); err != nil {
+    if err := http.ListenAndServe(":8080", nil); err != nil {
         fmt.Println(err)
     }
 }
