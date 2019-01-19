@@ -1,8 +1,16 @@
 # GO言語
 
+## ローカル環境構築
+
+```bash
+$ docker-compose build
+$ docker-compose up -d
+$ docker-compose exec go bash
+```
+
 ## hello world
 
-```
+```bash
 # 実行
 $ go run hello.go
 hello world
@@ -15,22 +23,21 @@ hello world
 
 ## ホームページ取得
 
-```
+```bash
 $ go run wget.go
-&{200 OK 200 HTTP/2.0 2 0 map[Server:[gws] X-Xss-Protection:[1; mode=block] Alt-Svc:[quic=":443"; ma=2592000; v="44,43,39,35"] Expires:[-1] P3p:[CP="This is not a P3P policy! See g.co/p3phelp for more info."] Content-Type:[text/html; charset=Shift_JIS] X-Frame-Options:[SAMEORIGIN] Set-Cookie:[1P_JAR=2019-01-13-23; expires=Tue, 12-Feb-2019 23:55:36 GMT; path=/; domain=.google.co.jp NID=154=JPBbg-zE1Z6Pb36H0Pn3c6ERRWBaoXdZq7I5QLIDQccI3SwbK8xtCDteIsS-Y5cV2vW6binvoeOUs4rJVc1NDTD5RdMU_QX69wo7TrTxwyKbB9YbPQmqaiYYQndwMSSTpOGB6UAkcLynrmvlrgmNASS9wh9-uqE6xbYlCikfiH0; expires=Mon, 15-Jul-2019 23:55:36 GMT; path=/; domain=.google.co.jp; HttpOnly] Date:[Sun, 13 Jan 2019 23:55:36 GMT] Cache-Control:[private, max-age=0]] 0xc000097440 -1 [] false true map[] 0xc000112000 0xc0000d4370} <nil>
-~/go
+200 OK 200 HTTP/2.0 2 0 ...
 ```
 
 ## インポート / 相対パス
 
-```
+```bash
 $ go run relative/main.go 
 Hello, pkg2.
 ```
 
 ## ワークスペース
 
-```
+```bash
 $cd src
 
 # 実行 (コードから直接実行)
@@ -45,20 +52,20 @@ false
 ```
 
 ワークスペースでのコンパイル
-```
+```bash
 $ go install workpkg/workhello
 $ ls -la ../pkg/darwin_amd64/workpkg/
 -rw-r--r--  1 onoshoji  staff  3940 Jan 14 09:02 workhello.a
 ```
 
 main.goのコンパイル & 実行
-```
+```bash
 $ go build main.go
 $ ./main
 ```
 
 リモートパッケージのインストール
-``` 
+```bash
 $ go get github.com/golang/example/stringutil
 $ ls -la github.com/golang/example/
 drwxr-xr-x  12 onoshoji  staff    384 Jan 14 09:08 .git
@@ -77,67 +84,67 @@ Hello, Go examples!
 
 ## リテラル
 
-```
+```bash
 $ go run literal/main.go
 ```
 
 ## 浮動小数点
 
-```
+```bash
 $ go run float/main.go
 ```
 
 ## 演算子
 
-```
+```bash
 $ go run operator/main.go
 ```
 
 ## キャスト
 
-```
+```bash
 $ go run cast/main.go
 ```
 
 ## 定数
 
-```
+```bash
 $ go run constant/main.go
 ```
 
 ## 変数
 
-```
+```bash
 $ go run variable/main.go
 ```
 
 ## 条件分岐 (if文)
 
-```
+```bash
 $ go run if/main.go
 ```
 
 ## 繰り返し処理 (for文)
 
-```
+```bash
 $ go run for/main.go
 ```
 
 ## 条件分岐 (switch文)
 
-```
+```bash
 $ go run switch/main.go
 ```
 
 ## ラベルへのジャンプ(goto文)
 
-```
+```bash
 $ go run goto/main.go
 ```
 
 ## 関数
 
-```
+```bash
 $ go run function/main.go
 $ open http://localhost:4000/hello    -> 200 ok
 $ open http://localhost:4000/goodbye  -> 200 ok
@@ -146,37 +153,37 @@ $ open http://localhost:4000/hoge     -> 404 page not found
 
 ## 型の宣言
 
-```
+```bash
 $ go run type/main.go
 ```
 
 ## 構造体
 
-```
+```bash
 $ go run struct/main.go
 ```
 
 ## ポインタ
 
-```
+```bash
 $ go run pointer/main.go
 ```
 
 ## new組み込み関数
 
-```
+```bash
 $ go run new/main.go
 ```
 
 ## nil
 
-```
+```bash
 $ go run nil/main.go
 ```
 
 ## Webサーバ (Helloページ / 入力フォーム)
 
-```
+```bash
 $ cd server
 $ go run main.go
 $ open http://localhost:4000/      <- Helloページ
@@ -185,7 +192,7 @@ $ open http://localhost:4000/form  <- 入力フォーム
 
 ## Webサーバ (電卓アプリ)
 
-```
+```bash
 $ cd calculator
 $ go run main.go
 $ open http://localhost:4000/
@@ -193,7 +200,7 @@ $ open http://localhost:4000/
 
 ## Webサーバ (jsonデータの利用)
 
-```
+```bash
 $ cd json
 $ go run main.go
 $ open http://localhost:4000/html
