@@ -6,7 +6,8 @@ import (
 )
 
 /**
- * main関数
+ * 2.3.2 ワークスペースでのコンパイル
+ *       (go install コマンド)
  */
 func main() {
 	/**
