@@ -231,3 +231,56 @@ $ go run 14.4-thread/main.go
 $ go run 15.1-printf/main.go
 ```
 
+## 15.2.1 列挙値の文字列化(stringerコマンド)
+```bash
+$ cd 15.2.1-stringer/
+$ $GOPATH/bin/stringer -type DayOfWeek main.go
+$ go run main.go dayofweek_string.go
+```
+
+## 15.2.2 コメント上にあるコマンドの実行 (go generateコマンド)
+```bash
+$ cd 15.2.2-go-generate/
+$ go generate main.go
+```
+
+## 15.3.1 ソースコードの整形 (go fmtコマンド)
+```bash
+$ go fmt 15.3.1-go-fmt/main.go
+```
+
+## 15.3.2 import文の追加 (goimportsコマンド)
+```bash
+# 確認(上書きはしない)
+$ $GOPATH/bin/goimports 15.3.2-goimports/main.go
+
+# 整形して上書きする
+$ $GOPATH/bin/goimports -w 15.3.2-goimports/main.go
+```
+
+## 15.3.3 ソースコードのチェック (go vetコマンド)
+```bash
+$ go vet 15.3.3-go-vet/main.go
+```
+
+## 15.4 ドキュメント (go docコマンド、godocコマンド)
+```bash
+# ドキュメント表示
+$ cd 15.4-go-doc/mypkg
+$ go doc
+
+# ドキュメント表示 (ブラウザでの閲覧)
+$ godoc -http=:8080
+$ open http://192.168.99.100:8080
+$ open http://192.168.99.100:8080/pkg
+```
+s
+## 15.5.1 単体テスト (go testコマンド)
+```bash
+$ go test mypkg
+```
+
+## 15.5.2 ベンチマーク (go test -bench コマンド)
+```bash
+$ go test -bench . mypkg
+```
